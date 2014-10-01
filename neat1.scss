@@ -1,0 +1,59 @@
+@import "bower_components/bourbon/dist/bourbon";
+
+// grid settings
+$gutter: em(0);
+
+@import "bower_components/neat/app/assets/stylesheets/neat";
+
+$desktop-size: new-breakpoint(min-width 980px);
+$tablet-size: new-breakpoint(max-width 980px);
+$mobile-size: new-breakpoint(max-width 640px);
+
+.row {
+  @include outer-container;
+}
+
+.column {
+  @include media($desktop-size) {
+    @include span-columns(2);
+  }
+  @include media($tablet-size) {
+    @include span-columns(3);
+  }
+  @include media($mobile-size) {
+    @include span-columns(6);
+  }
+}
+
+.banner {
+  @include media($desktop-size) {
+    @include span-columns(12);
+  }
+  @include media($tablet-size) {
+    @include span-columns(12);
+  }
+  @include media($mobile-size) {
+    @include span-columns(12);
+  }
+}
+
+.show-for-small-only {
+  display: none;
+  @include media($mobile-size) {
+    display: inline;
+  }
+}
+
+.show-for-medium-only {
+  display: none;
+  @include media(min-width 640px max-width 980px) {
+    display: inline;
+  }
+}
+
+.show-for-large-up {
+  display: none;
+  @include media($desktop-size) {
+    display: inline;
+  }
+}
