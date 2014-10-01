@@ -1,0 +1,9 @@
+{
+    "name": "Grid Testing",
+    "version": "0.0.1",
+    "dependencies": {
+        "neat": "~1.6",
+        "foundation": "~5.4",
+        "bootstrap-sass-official": "~3.2"
+    }
+}

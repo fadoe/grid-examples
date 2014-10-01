@@ -17,10 +17,6 @@ $mobile-size: new-breakpoint(max-width 640px);
   @include outer-container;
 }
 
-.columns {
-  border-collapse: separate;
-}
-
 .large-2 {
   @include media($desktop-size) {
     @include span-columns(2);
