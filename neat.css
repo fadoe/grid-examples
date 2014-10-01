@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 .row {
-  max-width: 76.5em;
+  max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
   .row:after {
@@ -80,7 +80,7 @@
 
 .show-for-large-up {
   display: none; }
-  @media screen and (min-width: 981px) {
+  @media screen and (min-width: 980px) {
     .show-for-large-up {
       display: inline; } }
 

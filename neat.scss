@@ -1,15 +1,11 @@
 @import "bower_components/bourbon/dist/bourbon";
 
 // grid settings
-//$column: em(100);
 $gutter: em(0);
-$grid-columns: 12;
-$max-width: em(1224);
-$min-width: em(320);
 
 @import "bower_components/neat/app/assets/stylesheets/neat";
 
-$desktop-size: new-breakpoint(min-width 980px);  // display menu with shadow for overlay
+$desktop-size: new-breakpoint(min-width 980px);
 $tablet-size: new-breakpoint(max-width 980px);
 $mobile-size: new-breakpoint(max-width 640px);
 
@@ -70,7 +66,7 @@ $mobile-size: new-breakpoint(max-width 640px);
 
 .show-for-large-up {
   display: none;
-  @include media(min-width 981px) {
+  @include media($desktop-size) {
     display: inline;
   }
 }
